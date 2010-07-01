@@ -1,0 +1,6 @@
+= rails-no-cache
+
+The plugin adds the method <tt>force_no_cache</tt> to controllers which if invoked
+will disable caching across a variety of user agents, proxies and browsers. The caching
+can be disabled on a per request basis by invoking the <tt>force_no_cache_filter_method</tt>
+instance method.
