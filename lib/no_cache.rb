@@ -11,7 +11,7 @@ protected
     response.headers["Last-Modified"] = CGI::rfc1123_date(Time.now)
 
     # set expiry to back in the past (makes us a bad candidate for caching)
-    response.headers["Expires"] = 0
+    response.headers["Expires"] = "0"
 
     # HTTP 1.0 (disable caching)
     response.headers["Pragma"] = "no-cache"
