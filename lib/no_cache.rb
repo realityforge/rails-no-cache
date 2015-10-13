@@ -18,6 +18,6 @@ protected
 
     # HTTP 1.1 (disable caching of any kind)
     # HTTP 1.1 'pre-check=0, post-check=0' => (Internet Explorer should always check)
-    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+    response.headers["Cache-Control"] = "no-cache, no-store, max-age=0, must-revalidate, pre-check=0, post-check=0"
   end
 end
